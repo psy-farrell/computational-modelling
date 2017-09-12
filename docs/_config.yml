@@ -1,0 +1,60 @@
+# Site wide configuration
+
+title: Computational Modeling of Cognition and Behavior
+locale: en_US
+description: By Simon Farrell and Stephan Lewandowsky
+logo: comp-cover.png
+search: true
+url: https://psy-farrell.github.io/computational-modelling/
+baseurl: /computational-modelling
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-sitemap
+  - jekyll-gist
+  #- jekyll-feed
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Simon Farrell
+  avatar: simon16.png
+  email: simon.farrell@uwa.edu.au
+  disqus-shortname:
+  twitter: psy-farrell
+  facebook: #username
+  github: psy-farrell
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
