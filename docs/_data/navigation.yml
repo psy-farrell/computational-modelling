@@ -1,16 +1,13 @@
 # Site navigation links
 
-- title: Blog
-  url: /blog/
-
 - title: About
   url: /about/
 
+- title: Blog
+  url: /blog/
+
 - title: Code
   url: https://github.com/psy-farrell/computational-modelling
-
-- title: Articles
-  url: /articles/
 
 - title: Exercises
   url: /exercises/
