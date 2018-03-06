@@ -1,0 +1,1 @@
+Joerg Rieskamp has kindly given us permission to distribute the data from his 2008 paper in the Rieskamp2008data.csv data file. We thank Joerg for allowing us to freely share the data so that you may fit it yourself.

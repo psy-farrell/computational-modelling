@@ -34,3 +34,4 @@ vignettes/*.pdf
 
 # Exclude generate site
 /docs/_site
+.Rproj.user
