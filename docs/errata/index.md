@@ -9,4 +9,4 @@ This page lists errata organised by chapter and page, with credit to error-spott
 
 ## 9. Multilevel or Hierarchical Modelling
 
-p. 213, Figure 9.5: The arrow from $k_{ij}$ to $\theta_{ij}$ in the figure should be reversed. [Víthor Rosa Franco]
+p. 213, Figure 9.5: The arrow from $$k_{ij}$$ to $$\theta_{ij}$$ in the figure should be reversed. [Víthor Rosa Franco]
