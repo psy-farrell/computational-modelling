@@ -11,4 +11,4 @@ This page lists errata organised by chapter and page, with credit to error-spott
 
 p. 213, Figure 9.5: The arrow from $$k_{ij}$$ to $$\theta_{ij}$$ in the figure should be reversed [Víthor Rosa Franco]: 
 
-![](images/fig9.5corrected.png)
+![]({{ site.url }}/images/fig9.5corrected.png)
