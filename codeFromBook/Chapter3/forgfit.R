@@ -1,4 +1,5 @@
-#next=L5
+rm(list=ls())
+
 #discrepancy for power forgetting function 
 powdiscrep <- function (parms,rec,ri) {                    
   if (any(parms<0)||any(parms>1)) return(1e6)
@@ -32,8 +33,7 @@ for (x in c(1:length(ri))) {
   lines(c(ri[x],ri[x]),c(dev[x],rec[x]),lwd=1)
   }
 axis(1,at=c(0:43))
-#previous=37
-#next=40
+
 #perform bootstrapping analysis
 ns  <- 55
 nbs <- 1000

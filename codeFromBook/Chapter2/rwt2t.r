@@ -2,18 +2,18 @@
 nreps <- 1000
 nsamples <- 2000
 
-drift <- 0.03  #noninformative stimulus 
+drift <- 0.03  # 0 = noninformative stimulus; >0 = informative
 sdrw <- 0.3
 criterion <- 3 
-t2tsd  <- c(0.0,0.025) 
+t2tsd  <- c(0.0,0.025)
 
-latencies <- rep(0,nreps)  
+latencies <- rep(0,nreps)
 responses <- rep(0,nreps)
 evidence <- matrix(0, nreps, nsamples+1) 
 for (i in c(1:nreps)) { 
   sp <- rnorm(1,0,t2tsd[1]) 
-  dr <- rnorm(1,drift,t2tsd[2])  
-  evidence[i,] <- cumsum(c(sp,rnorm(nsamples,dr,sdrw)))  
+  dr <- rnorm(1,drift,t2tsd[2]) 
+  evidence[i,] <- cumsum(c(sp,rnorm(nsamples,dr,sdrw))) 
   p <-  which(abs(evidence[i,])>criterion)[1]
   responses[i] <- sign(evidence[i,p])
   latencies[i]  <- p
@@ -25,11 +25,10 @@ plot(1:max(latencies[1:tbpn])+10,type="n",las=1,
      ylim=c(-criterion-.5,criterion+.5),
      ylab="Evidence",xlab="Decision time")
 for (i in c(1:tbpn)) {
-  lines(evidence[i,1:(latencies[i]-1)])  
+  lines(evidence[i,1:(latencies[i]-1)])   
 }
 abline(h=c(criterion,-criterion),lty="dashed")  
 
-x11()
 #plot histograms of latencies
 par(mfrow=c(2,1))
 toprt <- latencies[responses>0]
@@ -46,9 +45,4 @@ hist(botrt,col="gray",
      main=paste("Bottom responses (",as.numeric(botprop),
           ") m=",as.character(signif(mean(botrt),4)),
           sep=""),las=1)
-
-# savePlot(filename = paste("rwRTt2t",as.character(drift),
-          #                  as.character(t2tsd[1]),as.character(t2tsd[2]),
-          #                  ".pdf",sep=""),
-          # type = "pdf", device = dev.cur(), restoreConsole = TRUE)
 

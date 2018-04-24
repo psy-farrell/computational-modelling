@@ -1,6 +1,6 @@
 #plot data and current predictions          
 getregpred <- function(parms,data) {
-  getregpred <- parms["b0"] + parms["b1"]*data[ ,2]          
+  getregpred <- parms["b0"] + parms["b1"]*data[ ,2]           
   
   #wait with drawing a graph until key is pressed
   par(ask=TRUE)
@@ -18,8 +18,6 @@ rmsd <-function(parms, data1) {
   rmsd<-sqrt(sum((preds-data1[ ,1])^2)/length(preds))
 }
 
-
-#next L=28
 #define parameters to generate data
 nDataPts  <- 20
 rho       <- .8
@@ -31,8 +29,7 @@ data[ ,2] <- rnorm(nDataPts)
 data[ ,1] <- rnorm(nDataPts)*sqrt(1.0-rho^2) + data[ ,2]*rho + intercept  
 
 #do conventional regression analysis
-lm(data[,1] ~ data[,2])       
-
+lm(data[,1] ~ data[,2])        
 #assign starting values 
 startParms <- c(-1., .2) 
 names(startParms) <- c("b1", "b0")
