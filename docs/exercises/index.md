@@ -5,7 +5,7 @@ excerpt: "Exercises accompanying the book."
 search_omit: true
 ---
 
-Answers are available [SOMEWHERE]
+Answers are available [here](https://github.com/psy-farrell/computational-modelling/tree/master/exerciseAnswers)
 
 <ul class="post-list">
 {% for post in site.categories.exercises %} 
