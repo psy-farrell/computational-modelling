@@ -9,7 +9,7 @@ This page lists errata organised by chapter and page, with credit to error-spott
 
 ### 4. Maximum Likelihood Parameter Estimation
 
-p. 83: The caption to Figure 4.5 is incorrect: the top panel of Figure 4.5 plots the probability density p(t|m). [Thanks to Daniel Kraußer]
+p. 83: The caption to Figure 4.5 is incorrect: the top panel of Figure 4.5 plots the probability density p(t+m). [Thanks to Daniel Kraußer]
 
 p. 95: The first line should refer to parameters *m* and *a* of the Wald model (not parameters *m* amd *s*). [Thanks to Daniel Kraußer]
 
