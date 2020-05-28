@@ -17,6 +17,9 @@ p. 83: The caption to Figure 4.5 is incorrect: the top panel of Figure 4.5 plots
 
 p. 95: The first line should refer to parameters *m* and *a* of the Wald model (not parameters *m* and *s*). [Thanks to Daniel Kraußer]
 
+### 5. Combining Information from Multiple Participants
+
+pp. 110--111: Listing 5.1 and surrounding text refer to `dat` as having participants in rows, and data in columns. The reverse is true: each column is a participant, so that `dat` has `nobs` rows and `nsubj` columns. [Thanks to Chris Street of University of Huddersfield]
 
 ### 7. Bayesian Parameter Estimation
 
