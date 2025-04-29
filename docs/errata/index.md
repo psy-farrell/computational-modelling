@@ -21,6 +21,8 @@ p. 95: The first line should refer to parameters *m* and *a* of the Wald model (
 
 pp. 110--111: Listing 5.1 and surrounding text refer to `dat` as having participants in rows, and data in columns. The reverse is true: each column is a participant, so that `dat` has `nobs` rows and `nsubj` columns. [Thanks to Chris Street of University of Huddersfield]
 
+p. 116 "We initialize the mixing proportion (the proportion of data thought to belong to the first distribution, ppi)...": ppi is the proportion of data thought to belong to the *second* distribution. [Thanks to Kristin Javaras, McLean Hospital Harvard]
+
 ### 7. Bayesian Parameter Estimation
 
 Listings 7.3 and 7.4 contain an error. Instead of `g*dunif(data, -180, 180)` in Listing 7.3, line 35, and Listing 7.4, lines 6-7, it should be `g*rep(1,length(data))/(2*pi)`. [A full explanation and correction]({{ site.url }}/errata/listing7374.pdf). [Thanks to Grant Shields of UC Davis]
