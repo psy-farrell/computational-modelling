@@ -29,7 +29,9 @@ Listings 7.3 and 7.4 contain an error. Instead of `g*dunif(data, -180, 180)` in 
 
 ### 9. Multilevel or Hierarchical Modelling
 
-p. 213, Figure 9.5: The arrow from $$k_{ij}$$ to $$\theta_{ij}$$ in the figure should be reversed [Thanks to Víthor Rosa Franco]: 
+p. 213, Figure 9.5: The arrow from $$k_{ij}$$ to $$\theta_{ij}$$ in the figure should be reversed [Thanks to Víthor Rosa Franco]
+
+p. 221, Figure 9.9: The index in the outer plate should read $$p = 1,...nsubj$$, as *p* is used here to index participants [Thanks to Kristin Javaras, McLean Hospital Harvard]
 
 ![]({{ site.url }}/images/fig9.5corrected.png)
 
